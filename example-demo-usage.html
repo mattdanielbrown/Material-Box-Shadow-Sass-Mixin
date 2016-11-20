@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Material Design Drop Shadow Mixin Demo</title>
+		
+		<!-- ======================================================================================================= -->
+		<!-- NOTICE: THIS DEMO WON'T WORK WITHOUT USING CSS STYLESHEET COMPILED BY THE SCSS MIXIN -->
+		<!-- ======================================================================================================= -->
+		
+		<!-- Styles for JUST the usage example/demo -->
+		<style>
+			section {
+				padding: 40px;
+				display:flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: center;
+				align-items: center;
+				margin: 20px;
+				background: #f3f3f3;
+			}
+
+			div {
+				font-size: 12px;
+				background: #fff;
+				padding: 50px;
+				text-align: center;
+				flex-basis: 100px;
+				margin: 15px;
+			}
+			.dark {
+				background: #555;
+			}
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+				padding: 0 5%;
+			}
+			code {
+				background: #f3f3f3;
+				padding: 5px 12px;
+				color: #ff3333;
+				border: 1px solid #ddd;
+			}
+		</style>
+
+	</head>
+	<body>
+		
+		<!-- ======================================================================================================= -->
+		<!-- NOTICE: THIS DEMO WON'T WORK WITHOUT USING CSS STYLESHEET COMPILED BY THE SCSS MIXIN -->
+		<!-- ======================================================================================================= -->
+		
+		<h1>material-shadow.scss</h1>
+		<p>A mixin based on Material Design box shadows with 5 presets and a strength setting.</p>
+		
+		<p>sample usage:</p>
+		<code>@include material-shadow($z-depth: 3);</code>
+		<code>@include material-shadow(3);</code>
+		<section>
+			<div>$z-depth: 1</div>
+			<div>$z-depth: 2</div>
+			<div>$z-depth: 3</div>
+			<div>$z-depth: 4</div>
+			<div>$z-depth: 5</div>
+		</section>
+		
+		<h3>Increase strength for darker backgrounds</h3>
+		
+		<p>sample usage:</p>
+		<code>@include material-shadow($z-depth: 3, $strenght: 2);</code>
+		<br/><br/>
+		<section class="dark">
+			<div>$z-depth: 1, $strength: 2</div>
+			<div>$z-depth: 2, $strength: 2</div>
+			<div>$z-depth: 3, $strength: 2</div>
+			<div>$z-depth: 4, $strength: 2</div>
+			<div>$z-depth: 5, $strength: 2</div>
+		</section>
+		
+		<h3>sample hover</h3>
+		<section>
+			<div class="float">hover us</div>
+			<div class="float">hover us</div>
+		</section>
+	</body>
+</html>
