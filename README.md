@@ -4,11 +4,14 @@ A really cool and easy to use SASS (SCSS) mixin to create an interactive Materia
 ## Description
 This is mixin based on Material Design box shadows with 5 presets and a strength setting.
 
-**__I'm not the author of this mixin__**
+![Demo Image](https://raw.githubusercontent.com/mattdanielbrown/Material-Box-Shadow-Sass-Mixin/master/Demo-Image-1.png)
+![Demo Image Dark Background](https://raw.githubusercontent.com/mattdanielbrown/Material-Box-Shadow-Sass-Mixin/master/Demo-Image-2.png)
 
-#### It was created by [Daniel Box](http://codepen.io/dbox/)
+**__I'm not the author of this mixin.__**
 
-**[Check out his live demo on CodePen](http://codepen.io/dbox/pen/JXjezq)**
+#### It was created by [Daniel Box](http://codepen.io/dbox/).
+
+**[Check out his live demo on CodePen](http://codepen.io/dbox/pen/JXjezq).**
 
 ## Installation
 Add the `_material-design-drop-shadow.scss` partial file (which contains the mixin) to your project.
